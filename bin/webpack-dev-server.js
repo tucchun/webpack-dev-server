@@ -17,7 +17,7 @@ const processOptions = require('../lib/utils/processOptions');
 const createLogger = require('../lib/utils/createLogger');
 const getVersions = require('../lib/utils/getVersions');
 const options = require('./options');
-
+debugger
 let server;
 const serverData = {
   server: null,
@@ -163,5 +163,6 @@ function startDevServer(config, options) {
 }
 
 processOptions(config, argv, (config, options) => {
+  debugger
   startDevServer(config, options);
 });
